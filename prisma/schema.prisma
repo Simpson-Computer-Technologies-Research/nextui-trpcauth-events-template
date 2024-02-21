@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_DIRECT_URL")
+}
+
+model Event {
+  id          String   @id @unique @default(uuid())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  title       String
+  description String
+  formUrl     String
+  image       String
+  date        String
+  location    String
+  price       Int
+  visible     Boolean  @default(true)
+}
+
+model User {
+  id           String   @id @unique @default(uuid())
+  registeredAt DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  secret       String
+  email        String
+  password     String
+  name         String
+  image        String
+  permissions  String[]
+}
+
+// npx prisma migrate dev --name init
+// npx prisma db push
+// npx prisma generate
