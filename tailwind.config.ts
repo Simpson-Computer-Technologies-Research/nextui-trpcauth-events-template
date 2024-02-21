@@ -18,7 +18,22 @@ const config = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      // addCommonColors: true, (add tailwind colors)
+      themes: {
+        dark: {
+          colors: {
+            primary: {
+              // DEFAULT: "",
+              // foreground: "",
+            },
+            // focus: "",
+          },
+        },
+      },
+    }),
+  ],
 };
 
 export default config;

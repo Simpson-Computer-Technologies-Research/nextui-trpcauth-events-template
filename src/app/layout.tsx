@@ -9,9 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Ski & Snowboard Club | Home",
-  description:
-    "The ski & snowboard club is a community of snow sports enthusiasts. Join us and get exclusive access to the best ski resorts in the world.",
+  title: "nextui-trpcauth-events-template",
+  description: "Super cool template",
 };
 
 export default function RootLayout({

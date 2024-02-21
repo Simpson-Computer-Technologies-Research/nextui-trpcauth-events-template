@@ -79,7 +79,7 @@ function Components(): JSX.Element {
   if (sessionStatus === "loading" || getAllUsersStatus === "loading") {
     return (
       <Spinner
-        color="secondary"
+        color="primary"
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform"
       />
     );
@@ -136,7 +136,7 @@ function Components(): JSX.Element {
           variant="bordered"
           value={search}
           classNames={{
-            inputWrapper: "border-gray-300/10",
+            inputWrapper: "border-foreground/10",
           }}
           onChange={(e) => setSearch(e.target.value)}
         />
@@ -195,7 +195,7 @@ function Components(): JSX.Element {
           return (
             <div
               key={user.id}
-              className="z-10 flex w-fit max-w-96 flex-col items-start justify-start gap-4 rounded-md border-2 border-gray-300/10 bg-background/90 p-7 text-foreground"
+              className="z-10 flex w-fit max-w-96 flex-col items-start justify-start gap-4 rounded-md border-2 border-foreground/10 bg-background/90 p-7 text-foreground"
             >
               <UserHeader
                 avatarProps={{
@@ -212,11 +212,11 @@ function Components(): JSX.Element {
                 {user.permissions.map((permission) => (
                   <div
                     key={permission}
-                    className="flex w-fit flex-row items-center justify-start gap-2 rounded-md border border-gray-300/10 p-2"
+                    className="flex w-fit flex-row items-center justify-start gap-2 rounded-md border border-foreground/10 p-2"
                   >
                     <CrossIcon
                       className={cn(
-                        "cursor-pointer rounded-full bg-gray-300/10 p-1 duration-300 ease-in-out hover:bg-gray-300/30 aria-disabled:cursor-not-allowed aria-disabled:opacity-50",
+                        "cursor-pointer rounded-full bg-border p-1 duration-300 ease-in-out hover:bg-gray-300/30 aria-disabled:cursor-not-allowed aria-disabled:opacity-50",
                         (user.id === session.user.id &&
                           permission === Permission.ADMIN) ||
                           permission === Permission.DEFAULT
@@ -236,10 +236,10 @@ function Components(): JSX.Element {
               </div>
               <Dropdown
                 placement="bottom-end"
-                className="border-2 border-gray-300/10 bg-background text-foreground"
+                className="border-2 border-foreground/10 bg-background text-foreground"
               >
                 <DropdownTrigger>
-                  <Button variant="bordered" color="secondary" size="sm">
+                  <Button variant="bordered" color="primary" size="sm">
                     Add Permissions
                   </Button>
                 </DropdownTrigger>

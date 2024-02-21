@@ -38,7 +38,7 @@ function Components(): JSX.Element {
   if (sessionStatus === "loading") {
     return (
       <Spinner
-        color="secondary"
+        color="primary"
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform"
       />
     );
@@ -62,7 +62,7 @@ function Components(): JSX.Element {
 
   return (
     <MainWrapper className="relative justify-start px-7 py-16 sm:p-16">
-      <div className="z-10 flex w-fit flex-col gap-4 rounded-md border-2 border-gray-300/10 bg-background/90 p-12 text-foreground">
+      <div className="z-10 flex w-fit flex-col gap-4 rounded-md border-2 border-foreground/10 bg-background/90 p-12 text-foreground">
         <h1 className="text-5xl font-bold leading-tight text-foreground md:text-6xl">
           Welcome,{" "}
           <GradientText className="font-bold">
@@ -72,10 +72,10 @@ function Components(): JSX.Element {
 
         <p className="w-4/5 text-sm text-gray-200/70">Your account details:</p>
         <div className="flex w-full flex-wrap items-center justify-start gap-2">
-          <div className="w-fit rounded-md border border-gray-300/10 p-2 text-sm text-gray-200/70">
+          <div className="w-fit rounded-md border border-foreground/10 p-2 text-sm text-gray-200/70">
             {session.user.name}
           </div>
-          <div className="w-fit rounded-md border border-gray-300/10 p-2 text-sm text-gray-200/70">
+          <div className="w-fit rounded-md border border-foreground/10 p-2 text-sm text-gray-200/70">
             {session.user.email}
           </div>
         </div>
@@ -85,7 +85,7 @@ function Components(): JSX.Element {
           {session.user.permissions.map((permission) => (
             <div
               key={permission}
-              className="w-fit rounded-md border border-gray-300/10 p-2 text-sm text-gray-200/70"
+              className="w-fit rounded-md border border-foreground/10 p-2 text-sm text-gray-200/70"
             >
               {permission}
             </div>
@@ -93,7 +93,7 @@ function Components(): JSX.Element {
         </div>
 
         <Button
-          color="secondary"
+          color="primary"
           variant="flat"
           className="px-10 py-6"
           href="/account/dashboard/users"
@@ -102,7 +102,7 @@ function Components(): JSX.Element {
           Manage Users
         </Button>
         <Button
-          color="secondary"
+          color="primary"
           variant="flat"
           className="px-10 py-6"
           onClick={async () =>

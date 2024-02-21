@@ -8,7 +8,7 @@ export default function GradientText({
     <span
       {...props}
       className={cn(
-        "bg-transparent bg-gradient-to-r from-purple-600 to-violet-700 bg-clip-text text-transparent",
+        "bg-transparent bg-gradient-to-r from-sky-600 to-blue-700 bg-clip-text text-transparent",
         props.className,
       )}
     >

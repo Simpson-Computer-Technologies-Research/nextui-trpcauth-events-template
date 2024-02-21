@@ -5,7 +5,7 @@ import LooperBackground from "@/components/LooperBackground";
 import MainWrapper from "@/components/MainWrapper";
 import Navbar from "@/components/Navbar";
 import { Providers } from "@/components/Providers";
-import { eventConfig } from "@/lib/config";
+import { eventConfig, pageConfig } from "@/lib/config";
 import { trpc } from "@/lib/trpc/client";
 import { hasPermissions } from "@/lib/utils/permissions";
 import { ClubEvent, Permission } from "@/types";
@@ -77,7 +77,7 @@ function Components(): JSX.Element {
   if (getEventsStatus === "loading") {
     return (
       <Spinner
-        color="secondary"
+        color="primary"
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform"
       />
     );
@@ -102,7 +102,7 @@ function Components(): JSX.Element {
           Permission.CREATE_EVENT,
         ]) && (
           <Button
-            color="secondary"
+            color="primary"
             variant="flat"
             className="px-10 py-6"
             href="/events/create"
@@ -204,7 +204,7 @@ function Components(): JSX.Element {
                   isOpen={isOpen}
                   placement={"auto"}
                   onOpenChange={onOpenChange}
-                  className="border-2 border-gray-300/10 bg-background text-foreground"
+                  className="border-2 border-foreground/10 bg-background text-foreground"
                 >
                   <ModalContent>
                     {(onClose) => (

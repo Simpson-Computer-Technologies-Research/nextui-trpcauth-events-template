@@ -1,12 +1,11 @@
 "use client";
 
-import GradientText from "@/components/GradientText";
 import LooperBackground from "@/components/LooperBackground";
 import MainWrapper from "@/components/MainWrapper";
 import Navbar from "@/components/Navbar";
 import { Providers } from "@/components/Providers";
 import { defaultConfig, pageConfig } from "@/lib/config";
-import { Button, Link, LinkIcon, cn } from "@nextui-org/react";
+import { Button, Link, LinkIcon } from "@nextui-org/react";
 import Image from "next/image";
 import { Suspense, useEffect } from "react";
 
@@ -44,7 +43,7 @@ function Components(): JSX.Element {
         <pageConfig.home.header />
 
         <Button
-          color="secondary"
+          color="primary"
           variant="flat"
           className="px-10 py-6"
           href={defaultConfig.gryphlifeUrl}
@@ -55,22 +54,5 @@ function Components(): JSX.Element {
         </Button>
       </div>
     </MainWrapper>
-  );
-}
-
-/**
- * A fallback card for the image loading
- *
- * @param props The component props
- * @returns The JSX element
- */
-function ImageLoadingFallbackCard(props: { className?: string }): JSX.Element {
-  return (
-    <div
-      className={cn(
-        "rounded-lg border-2 border-gray-300/10 bg-background",
-        props.className,
-      )}
-    />
   );
 }

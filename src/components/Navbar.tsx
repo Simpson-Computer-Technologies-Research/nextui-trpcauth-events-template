@@ -14,6 +14,7 @@ import {
 } from "@nextui-org/react";
 import { useState } from "react";
 import Image from "next/image";
+import { pageConfig } from "@/lib/config";
 
 export default function Navbar(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function Navbar(): JSX.Element {
         />
         <NavbarBrand>
           <Image
-            src="/images/gryphon-white.png"
+            src={pageConfig.navbar.image}
             alt="Gryphon Logo White"
             width={100}
             height={100}
@@ -81,7 +82,7 @@ export default function Navbar(): JSX.Element {
         <NavbarItem>
           <Button
             as={Link}
-            color="secondary"
+            color="primary"
             href="/auth/signin"
             variant="flat"
             className="px-10 py-6"

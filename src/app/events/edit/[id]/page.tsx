@@ -4,7 +4,7 @@ import LooperBackground from "@/components/LooperBackground";
 import MainWrapper from "@/components/MainWrapper";
 import Navbar from "@/components/Navbar";
 import { Providers } from "@/components/Providers";
-import { eventConfig } from "@/lib/config";
+import { eventConfig, pageConfig } from "@/lib/config";
 import { trpc } from "@/lib/trpc/client";
 import { hasPermissions } from "@/lib/utils/permissions";
 import { ClubEvent, Permission } from "@/types";
@@ -85,7 +85,7 @@ function Components(): JSX.Element {
   if (sessionStatus === "loading" || getEventStatus === "loading") {
     return (
       <Spinner
-        color="secondary"
+        color="primary"
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform"
       />
     );
@@ -262,7 +262,7 @@ function Components(): JSX.Element {
             isDisabled={updateEventStatus === "loading"}
             defaultSelected={event.visible}
             checked={event.visible}
-            color="secondary"
+            color="primary"
             onChange={(e) => setEvent({ ...event, visible: e.target.checked })}
           >
             <p className="text-foreground">Visible</p>

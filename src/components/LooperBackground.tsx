@@ -6,6 +6,8 @@ import { SVGProps } from "react";
 export default function LooperBackground(
   props: SVGProps<SVGSVGElement>,
 ): JSX.Element {
+  const color = "#338EF7";
+
   return (
     <svg
       {...props}
@@ -506,7 +508,7 @@ export default function LooperBackground(
           y2="124.352"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -517,7 +519,7 @@ export default function LooperBackground(
           y2="123.169"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -528,7 +530,7 @@ export default function LooperBackground(
           y2="123.732"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -539,7 +541,7 @@ export default function LooperBackground(
           y2="126.029"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -550,7 +552,7 @@ export default function LooperBackground(
           y2="130.04"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -561,7 +563,7 @@ export default function LooperBackground(
           y2="135.744"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -572,7 +574,7 @@ export default function LooperBackground(
           y2="143.112"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -583,7 +585,7 @@ export default function LooperBackground(
           y2="152.11"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -594,7 +596,7 @@ export default function LooperBackground(
           y2="162.702"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -605,7 +607,7 @@ export default function LooperBackground(
           y2="174.846"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -616,7 +618,7 @@ export default function LooperBackground(
           y2="188.494"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -627,7 +629,7 @@ export default function LooperBackground(
           y2="203.597"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -638,7 +640,7 @@ export default function LooperBackground(
           y2="220.101"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -649,7 +651,7 @@ export default function LooperBackground(
           y2="237.947"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -660,7 +662,7 @@ export default function LooperBackground(
           y2="257.075"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -671,7 +673,7 @@ export default function LooperBackground(
           y2="277.421"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -682,7 +684,7 @@ export default function LooperBackground(
           y2="298.917"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -693,7 +695,7 @@ export default function LooperBackground(
           y2="321.494"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -704,7 +706,7 @@ export default function LooperBackground(
           y2="345.079"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -715,7 +717,7 @@ export default function LooperBackground(
           y2="369.599"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -726,7 +728,7 @@ export default function LooperBackground(
           y2="394.978"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -737,7 +739,7 @@ export default function LooperBackground(
           y2="421.138"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -748,7 +750,7 @@ export default function LooperBackground(
           y2="448.001"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -759,7 +761,7 @@ export default function LooperBackground(
           y2="475.487"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -770,7 +772,7 @@ export default function LooperBackground(
           y2="503.515"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -781,7 +783,7 @@ export default function LooperBackground(
           y2="532.006"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -792,7 +794,7 @@ export default function LooperBackground(
           y2="560.879"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -803,7 +805,7 @@ export default function LooperBackground(
           y2="590.052"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -814,7 +816,7 @@ export default function LooperBackground(
           y2="619.446"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -825,7 +827,7 @@ export default function LooperBackground(
           y2="648.981"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -836,7 +838,7 @@ export default function LooperBackground(
           y2="678.579"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -847,7 +849,7 @@ export default function LooperBackground(
           y2="708.161"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -858,7 +860,7 @@ export default function LooperBackground(
           y2="737.653"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -869,7 +871,7 @@ export default function LooperBackground(
           y2="766.98"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -880,7 +882,7 @@ export default function LooperBackground(
           y2="796.07"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -891,7 +893,7 @@ export default function LooperBackground(
           y2="824.852"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -902,7 +904,7 @@ export default function LooperBackground(
           y2="853.26"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -913,7 +915,7 @@ export default function LooperBackground(
           y2="881.226"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -924,7 +926,7 @@ export default function LooperBackground(
           y2="908.69"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -935,7 +937,7 @@ export default function LooperBackground(
           y2="935.591"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -946,7 +948,7 @@ export default function LooperBackground(
           y2="961.873"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -957,7 +959,7 @@ export default function LooperBackground(
           y2="987.482"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -968,7 +970,7 @@ export default function LooperBackground(
           y2="1012.37"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -979,7 +981,7 @@ export default function LooperBackground(
           y2="1036.49"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -990,7 +992,7 @@ export default function LooperBackground(
           y2="1059.79"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1001,7 +1003,7 @@ export default function LooperBackground(
           y2="1082.25"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1012,7 +1014,7 @@ export default function LooperBackground(
           y2="1103.82"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1023,7 +1025,7 @@ export default function LooperBackground(
           y2="1124.47"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1034,7 +1036,7 @@ export default function LooperBackground(
           y2="1144.18"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1045,7 +1047,7 @@ export default function LooperBackground(
           y2="1162.92"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1056,7 +1058,7 @@ export default function LooperBackground(
           y2="1180.68"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1067,7 +1069,7 @@ export default function LooperBackground(
           y2="1197.43"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1078,7 +1080,7 @@ export default function LooperBackground(
           y2="1213.16"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1089,7 +1091,7 @@ export default function LooperBackground(
           y2="1227.87"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1100,7 +1102,7 @@ export default function LooperBackground(
           y2="1241.56"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1111,7 +1113,7 @@ export default function LooperBackground(
           y2="1254.22"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1122,7 +1124,7 @@ export default function LooperBackground(
           y2="1265.86"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1133,7 +1135,7 @@ export default function LooperBackground(
           y2="1276.48"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1144,7 +1146,7 @@ export default function LooperBackground(
           y2="1286.1"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1155,7 +1157,7 @@ export default function LooperBackground(
           y2="1294.74"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1166,7 +1168,7 @@ export default function LooperBackground(
           y2="1302.41"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1177,7 +1179,7 @@ export default function LooperBackground(
           y2="1309.13"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1188,7 +1190,7 @@ export default function LooperBackground(
           y2="1314.93"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1199,7 +1201,7 @@ export default function LooperBackground(
           y2="1319.84"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1210,7 +1212,7 @@ export default function LooperBackground(
           y2="1323.89"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1221,7 +1223,7 @@ export default function LooperBackground(
           y2="1327.11"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1232,7 +1234,7 @@ export default function LooperBackground(
           y2="1329.53"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1243,7 +1245,7 @@ export default function LooperBackground(
           y2="1331.21"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
@@ -1254,7 +1256,7 @@ export default function LooperBackground(
           y2="1332.18"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9333ea" />
+          <stop stopColor={color} />
           <stop offset="1" stopColor="#00B0FF" stopOpacity="0.1" />
         </linearGradient>
       </defs>

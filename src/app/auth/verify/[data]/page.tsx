@@ -141,7 +141,7 @@ function Components() {
   return (
     <MainWrapper>
       <form
-        className="flex w-full flex-col gap-4 rounded-md border-2 border-gray-300/10 p-7 text-foreground md:w-[50rem] md:p-20"
+        className="flex w-full flex-col gap-4 rounded-md border-2 border-foreground/10 p-7 text-foreground md:w-[50rem] md:p-20"
         onSubmit={async (e) => await onSubmit(e)}
       >
         <h1 className="text-4xl font-extrabold tracking-wide md:text-7xl">

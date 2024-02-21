@@ -13,7 +13,7 @@ const TEAM_MEMBERS = [
     name: "Tristan Simpson",
     role: "Software Developer",
     image: "/images/default-profile-white.png",
-    description: "I'm a 1st year student from Cambridge, ON.",
+    description: "My description goes here",
   },
 ];
 
@@ -51,7 +51,7 @@ function Components(): JSX.Element {
 
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
           <Button
-            color="secondary"
+            color="primary"
             variant="flat"
             className="px-10 py-6"
             href={defaultConfig.gryphlifeUrl}
@@ -61,7 +61,7 @@ function Components(): JSX.Element {
             <LinkIcon />
           </Button>
           <Button
-            color="secondary"
+            color="primary"
             variant="flat"
             className="px-10 py-6"
             href={`mailto:${defaultConfig.contactEmail}`}
@@ -80,7 +80,7 @@ function Components(): JSX.Element {
         {TEAM_MEMBERS.map((member) => (
           <Card
             key={Math.random()}
-            className="w-full rounded-lg border-2 border-gray-300/10 bg-background p-10 backdrop-blur-md"
+            className="w-full rounded-lg border-2 border-foreground/10 bg-background p-10 backdrop-blur-md"
           >
             <div className="flex flex-row items-start justify-start gap-4">
               <Image
