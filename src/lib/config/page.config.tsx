@@ -31,6 +31,19 @@ const config = {
       </>
     ),
   },
+  events: {
+    header: (): ReactNode => (
+      <>
+        <h1 className="text-4xl font-semibold leading-tight text-foreground sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+          The header for the{" "}
+          <GradientText className="font-bold">events</GradientText> page.
+        </h1>
+        <p className="w-full text-lg text-gray-200/70 sm:w-4/5">
+        The paragraph for the events page.
+        </p>
+      </>
+    ),
+  },
 };
 
 export default config;

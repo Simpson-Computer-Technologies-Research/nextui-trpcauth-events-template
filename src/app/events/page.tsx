@@ -1,6 +1,5 @@
 "use client";
 
-import GradientText from "@/components/GradientText";
 import LooperBackground from "@/components/LooperBackground";
 import MainWrapper from "@/components/MainWrapper";
 import Navbar from "@/components/Navbar";
@@ -27,11 +26,11 @@ import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 
 /**
- * The home page
+ * The events page
  *
  * @returns The JSX element
  */
-export default function Home() {
+export default function EventsPage() {
   return (
     <>
       <LooperBackground className="fixed -right-[50rem] bottom-0 z-0 h-[42rem] w-[80rem] scale-[1.75] sm:-right-96 xl:w-screen" />
@@ -45,7 +44,7 @@ export default function Home() {
 }
 
 /**
- * The main components of the home page
+ * The main components of the events page
  *
  * @returns The JSX element
  */
@@ -86,15 +85,8 @@ function Components(): JSX.Element {
   return (
     <MainWrapper className="z-0 flex min-h-screen w-screen flex-col items-start justify-start gap-10 px-10 py-12 md:px-20">
       <div className="z-10 flex w-full max-w-7xl flex-col items-start justify-start gap-7 rounded-lg bg-background/90 backdrop-blur-md lg:w-4/5 2xl:w-11/12">
-        <h1 className="text-5xl font-semibold leading-tight text-foreground sm:text-7xl xl:text-8xl">
-          See for our upcoming{" "}
-          <GradientText className="font-bold">trips</GradientText> and{" "}
-          <GradientText className="font-bold">events</GradientText>!
-        </h1>
-        <p className="w-full text-lg text-gray-200/70 md:w-3/5">
-          We have a variety of events and trips planned for the year. Check out
-          the list below to see what&apos;s coming up!
-        </p>
+        <pageConfig.events.header />
+
         {/**
          * If the user has the proper permissions, show the create event button
          */}

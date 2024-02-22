@@ -26,7 +26,7 @@ import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 
 /**
- * The account dashboard page
+ * The dashboard page
  *
  * @returns The JSX element
  */
@@ -44,7 +44,7 @@ export default function DashboardPage() {
 }
 
 /**
- * The main components of the home page
+ * The main components of the dashboard page
  *
  * @returns The JSX element
  */

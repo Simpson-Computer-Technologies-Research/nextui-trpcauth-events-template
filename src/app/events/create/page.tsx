@@ -21,11 +21,11 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 /**
- * The home page
+ * The events creation page
  *
  * @returns The JSX element
  */
-export default function Home() {
+export default function EventsCreationPage() {
   return (
     <>
       <LooperBackground className="fixed -right-[50rem] bottom-0 -z-10 h-[42rem] w-[80rem] scale-[1.75] sm:-right-96 xl:w-screen" />
@@ -39,7 +39,7 @@ export default function Home() {
 }
 
 /**
- * The main components of the home page
+ * The main components of the events creation page
  *
  * @returns The JSX element
  */

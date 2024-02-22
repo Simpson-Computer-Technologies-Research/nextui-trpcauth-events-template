@@ -10,11 +10,11 @@ import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 
 /**
- * The account dashboard page
+ * The account page
  *
  * @returns The JSX element
  */
-export default function DashboardPage() {
+export default function AccountPage() {
   return (
     <>
       <LooperBackground className="fixed -right-[50rem] bottom-0 z-0 h-[42rem] w-[80rem] scale-[1.75] sm:-right-96 xl:w-screen" />
@@ -28,7 +28,7 @@ export default function DashboardPage() {
 }
 
 /**
- * The main components of the home page
+ * The main components of the account page
  *
  * @returns The JSX element
  */
