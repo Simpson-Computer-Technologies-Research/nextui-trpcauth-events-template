@@ -59,7 +59,7 @@ function Components(): JSX.Element {
   const [search, setSearch] = useState<string>("");
 
   useEffect(() => {
-    if (getAllUsersStatus === "loading" || getAllUsersStatus === "success") {
+    if (getAllUsersStatus !== "idle") {
       return;
     }
 
@@ -216,7 +216,7 @@ function Components(): JSX.Element {
                   >
                     <CrossIcon
                       className={cn(
-                        "cursor-pointer rounded-full bg-border p-1 duration-300 ease-in-out hover:bg-gray-300/30 aria-disabled:cursor-not-allowed aria-disabled:opacity-50",
+                        "bg-border cursor-pointer rounded-full p-1 duration-300 ease-in-out hover:bg-gray-300/30 aria-disabled:cursor-not-allowed aria-disabled:opacity-50",
                         (user.id === session.user.id &&
                           permission === Permission.ADMIN) ||
                           permission === Permission.DEFAULT
@@ -270,7 +270,7 @@ function Components(): JSX.Element {
                     key="CREATE_EVENT"
                     onClick={() => addPermission(Permission.CREATE_EVENT)}
                   >
-                    Post Events
+                    Create Events
                   </DropdownItem>
                 </DropdownMenu>
               </Dropdown>

@@ -23,6 +23,7 @@ enum AuthStatus {
   SUCCESS,
   LOADING,
   ERROR,
+  VALID_TOKEN,
   INVALID_TOKEN,
 }
 
@@ -70,13 +71,15 @@ function Components() {
   const { email, token } = JSON.parse(decodedData);
 
   useEffect(() => {
-    if (!email || !token) {
+    if (!email || !token || status !== AuthStatus.IDLE) {
       return;
     }
 
+    setStatus(AuthStatus.LOADING);
+
     verifyToken({ email, token }).then((res) => {
       res.valid
-        ? setStatus(AuthStatus.IDLE)
+        ? setStatus(AuthStatus.VALID_TOKEN)
         : setStatus(AuthStatus.INVALID_TOKEN);
     });
   }, [email, token, verifyToken]);

@@ -60,7 +60,7 @@ function Components(): JSX.Element {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   useEffect(() => {
-    if (getEventsStatus === "loading" || getEventsStatus === "success") {
+    if (getEventsStatus !== "idle") {
       return;
     }
 
